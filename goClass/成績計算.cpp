@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+#define cs c_str()
+#define tos(x) to_string(x)
+using namespace std;
+
+int main() {
+	int n;
+	cin >> n;
+	cout << "答對" + tos(n) + "題 ";  
+	if(n < 10) {
+		cout << n*6;
+	} else if(n < 20) {
+		cout << 60+(n-10)*2;
+	} else if(n < 40) {
+		cout << 60 + 20 + n - 20;
+	} else {
+		cout << 100;
+	}
+	cout << "分" << endl;
+}
