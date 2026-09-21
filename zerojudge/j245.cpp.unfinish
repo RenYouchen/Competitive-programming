@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	string s;
+	cin >> s;
+	if(s.length() % 2 == 0) {
+		int mid = s.length()/2;
+		string a = {s[mid]}, b = {s[mid+1]};
+		s.erase(mid,2);
+		s = a + s + b;
+	} else {
+		int mid = s.length()/2;
+		string a = {s[mid]};
+		s.erase(mid, 1);
+		s = a + s + a;
+	}
+
+	for(int i = 0; i < s.length(); i++) {
+		
+	}
+
+	cout << s << '\n';
+}
